@@ -30,7 +30,7 @@ export default function StoryHighlightSection() {
           <div className="absolute -left-4 -top-4 h-full w-full rounded-2xl border border-[#b04a5a]/35 sm:-left-5 sm:-top-5" />
           <div className="relative overflow-hidden rounded-2xl bg-[#ead0d3] p-3 shadow-[0_28px_55px_rgba(0,0,0,0.18)]">
             <img
-              src="/majestic/majestymix1.jpg"
+              src="/majestic/New%20bridals.png"
               alt="Wedding couple moment at Majesty Hall"
               className="h-[320px] w-full rounded-xl object-cover sm:h-[380px] lg:h-[430px]"
             />

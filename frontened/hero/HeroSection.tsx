@@ -54,7 +54,7 @@ export default function HeroSection() {
 
   return (
     <main className="relative overflow-hidden">
-      <section className="relative flex min-h-[calc(100vh-126px)] items-center justify-center px-4 py-14 text-center sm:min-h-[calc(100vh-88px)] sm:px-6 sm:py-20">
+      <section className="relative flex min-h-[110vh] items-center justify-center px-4 py-14 text-center sm:min-h-[105vh] sm:px-6 sm:py-20">
         <video
           className="absolute inset-0 h-full w-full object-cover"
           autoPlay
@@ -74,22 +74,18 @@ export default function HeroSection() {
         </div>
 
         <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center pt-24 sm:pt-32 md:pt-52">
-          <span className="mb-1 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[10px] font-medium tracking-[0.16em] text-slate-100/90 uppercase backdrop-blur sm:px-4 sm:text-xs sm:tracking-[0.2em]">
-            Luxury Wedding Destination
-          </span>
-
           <div className="mt-7 flex w-full max-w-xs flex-col items-center justify-center gap-3 sm:mt-8 sm:max-w-none sm:flex-row sm:flex-wrap sm:gap-4">
-            <button
-              type="button"
-              className="w-full rounded-full bg-gradient-to-r from-[#24d6ff] via-[#a855f7] to-[#ff9f3d] p-[2px] text-sm font-semibold text-white shadow-[0_10px_30px_rgba(88,146,255,0.35)] transition-all duration-300 hover:scale-[1.03] sm:w-auto"
-            >
-              <span className="block rounded-full bg-[#162338] px-6 py-2.5 sm:px-7 sm:py-3">Book A Visit</span>
-            </button>
-            <button
-              type="button"
-              className="w-full rounded-full border border-white/25 bg-white/10 px-6 py-2.5 text-sm font-semibold text-white backdrop-blur transition-colors hover:bg-white/20 sm:w-auto sm:px-7 sm:py-3"
+            <a
+              href="/gallery"
+              className="w-full rounded-full border border-[#f0d8aa] bg-[#fff4df] px-8 py-3 text-base font-semibold text-[#6b3a2c] shadow-[0_8px_22px_rgba(40,8,17,0.18)] transition-colors hover:bg-[#ffedd4] sm:w-auto sm:px-10 sm:py-3.5 sm:text-lg"
             >
               View Gallery
+            </a>
+            <button
+              type="button"
+              className="w-full rounded-full border border-[#f0d8aa] bg-[#fff4df] px-8 py-3 text-base font-semibold text-[#6b3a2c] shadow-[0_8px_22px_rgba(40,8,17,0.18)] transition-colors hover:bg-[#ffedd4] sm:w-auto sm:px-10 sm:py-3.5 sm:text-lg"
+            >
+              Book A Visit
             </button>
           </div>
         </div>
