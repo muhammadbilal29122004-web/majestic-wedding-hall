@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const floatingImages = [
   { src: "/majestic/majestymixx.jpg", alt: "Majesty candid 1", className: "left-0 top-14 -translate-x-1/3 -rotate-6" },
   { src: "/majestic/majestymixxx.jpg", alt: "Majesty candid 2", className: "right-0 top-16 translate-x-1/3 rotate-6" },
@@ -41,16 +43,30 @@ export default function EndingGallerySection() {
             key={image.src}
             className={`pointer-events-none absolute hidden h-36 w-28 overflow-hidden shadow-[0_10px_25px_rgba(0,0,0,0.14)] sm:block lg:h-44 lg:w-32 ${image.className}`}
           >
-            <img src={image.src} alt={image.alt} className="h-full w-full object-cover" loading="lazy" />
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={128}
+              height={176}
+              sizes="(min-width: 1024px) 128px, 112px"
+              quality={55}
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
           </div>
         ))}
 
         <div className="relative mx-auto mt-28 w-full max-w-xs sm:mt-24 sm:max-w-sm lg:max-w-md">
           <div className="absolute -left-8 -top-8 h-full w-full rotate-[-19deg] border border-black/55" />
           <div className="relative z-10 overflow-hidden bg-[#e9a2ac] p-3 shadow-[0_30px_60px_rgba(0,0,0,0.2)]">
-            <img
+            <Image
               src="/majestic/majestymixx12.jpg"
               alt="Majesty wedding featured memory"
+              width={420}
+              height={520}
+              sizes="(min-width: 1024px) 420px, (min-width: 640px) 384px, 320px"
+              quality={60}
+              loading="lazy"
               className="h-[320px] w-full object-cover sm:h-[360px] lg:h-[400px]"
             />
           </div>
